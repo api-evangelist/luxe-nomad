@@ -1,7 +1,23 @@
 aid: luxe-nomad
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/luxe-nomad.png
 name: Luxe Nomad
-description: Luxe Nomad is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: The Luxe Nomad is a luxury travel booking company offering curated villas, private residences,
+  and boutique hotels across Asia-Pacific and beyond. It operates as a consumer-facing booking platform rather
+  than a developer-first API provider. Surfaced as a portfolio company of 500 Global and added to the API
+  Evangelist network for enrichment, this profile was probed for a public API surface, developer portal, and
+  discovery documents; none were found (the site is bot-protected and returns no developer, API, or /.well-known
+  resources). It remains catalogued as a company lead with a probed domain-security profile.
 url: https://raw.githubusercontent.com/api-evangelist/luxe-nomad/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Travel
+- Hospitality
+- Villas
+- Booking
+- Luxury Travel
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/luxe-nomad-domain-security.yml
 - type: Website
   url: https://theluxenomad.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
